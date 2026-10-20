@@ -1,0 +1,25 @@
+SH4RKY Mobile Terminal V17 — QA Report
+Date: 2026-10-20
+
+Source checks
+- Node.js --check on the inline JavaScript: PASS
+- Duplicate HTML IDs: none
+- HTML file is self-contained; the provided-reference logo and five visible token icons are embedded.
+
+Chromium interaction test
+- Mobile 390 x 844: PASS
+- Mobile 430 x 932: rendered screenshot captured
+- Desktop 1600 x 900: PASS
+- JavaScript page errors: 0
+- Browser console errors: 0
+- Horizontal overflow on mobile: false
+- 16 coin entries rendered
+- Profile starting balance saved to 500 USD then SOL display: PASS (displayed as ◎3.4483)
+- Selecting VFY opened its trading screen: PASS
+- Chart zoom control and chart canvas: PASS
+- Buy flow updated cash/position: PASS
+- 25% sell flow opened PnL modal: PASS
+- PnL PNG download: PASS (vfy-pnl.png)
+
+Scope note
+- Quotes and candle movement are locally generated. Trade actions update the local browser account only and do not submit exchange/blockchain orders.
